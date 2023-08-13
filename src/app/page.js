@@ -23,7 +23,7 @@ export default function Home(){
     <main className=" h-screen w-screen overflow-x-hidden">
       <div className="h-screen w-screen">
 
-      <video ref={videoRef} className="absolute h-screen w-screen object-cover" src="video.mp4" onEnded={() => {setVideoEnd(true)}} playsInline></video>
+      <video ref={videoRef} className="absolute h-screen w-screen object-cover" poster="video.png" src="video.mp4" onEnded={() => {setVideoEnd(true)}} playsInline></video>
       { !videoStarted && 
       <div className="h-screen w-screen flex justify-center items-center text-center ">
       <button className="absolute text-red-600 font-bold text-2xl pt-20" onClick={handlePlayer}>ENTER</button>
