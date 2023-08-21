@@ -25,6 +25,8 @@ export default function Pay(props){
     }
 
     return(
+        <>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <div className="h-screen w-screen flex justify-center items-center">
             {success == 1 && 
                 <div className=" h-screen w-screen flex justify-center align-center items-center">
@@ -42,14 +44,15 @@ export default function Pay(props){
             {success == 0 && 
                 <Pop>
                     <form onSubmit={gateway}>
-                    <div className=" flex sm:flex-col justify-center items-center gap-4 p-4 text-[#DE2A33]">
+                    <div className=" flex justify-center items-center gap-4 p-4 text-[#DE2A33] w-screen">
                         <p className="">Enter Password:</p>
-                        <input type="password" placeholder="" className="outline-none border-2 p-2 border-[#DE2A33] bg-black w-[20vw] h-[5vh]" onChange={e => setPaymentPassword(e.target.value)} autoFocus/>
+                        <input type="password" placeholder="" className=" outline-none border-2 p-2 border-[#DE2A33] bg-black w-[20vw] h-[5vh]" onChange={e => setPaymentPassword(e.target.value)} autoFocus/>
                     </div>
                     </form>
                 </Pop>
             }
         </div>
+        </>
     )
 
 }

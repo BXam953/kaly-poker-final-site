@@ -18,8 +18,8 @@ export async function POST(request){
             }
         ],
         mode: 'payment',
-        success_url: 'http://localhost:3000/',
-        cancel_url: 'http://localhost:3000/',
+        success_url: 'https://www.kalypoker.com',
+        cancel_url: 'https://www.kalypoker.com',
     })
     return NextResponse.json(session.url);
 }

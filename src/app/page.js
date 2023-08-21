@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef } from "react";
-import Pay from "./stake/page";
+import Pay from "./stake/stakeHome";
 import { FaCircleXmark } from "react-icons/fa6";
 import { FaPlayCircle } from "react-icons/fa";
 
